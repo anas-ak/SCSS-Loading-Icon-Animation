@@ -1,0 +1,31 @@
+$color-background: #222;
+$color-icon: #87e062;
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-background;
+}
+
+.loading {
+    .loading-square {
+        fill: $color-icon;
+        &:not(:first-child) {
+            opacity: 0;
+            animation: move 1s infinite;
+            animation-delay: 0s;
+            &:nth-child(2n+1) {
+                animation-delay: 0.25s;
+            }
+            @keyframes move {
+                0% { opacity: 0; }
+                25% { opacity: 0.25; }
+                50% { opacity: 1; }
+                75% { opacity: 0.25; }
+                100% { opacity: 0; }
+            }
+        }
+    }
+}
