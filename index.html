@@ -8,13 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div style="z-index: -1;">
     <svg class="loading" width="90" height="90">
+        <rect class="loading-square" x="30" y="30"  width="30" height="30"></rect>
+
+        <rect class="loading-square" x="60"  y="30"  width="30" height="30"></rect>
+        <rect class="loading-square" x="30"  y="0"   width="30" height="30"></rect>
+        <rect class='loading-square' x='0'   y='30'  width='30' height='30'></rect>    
+        <rect class="loading-square" x="30"  y="60"  width="30" height="30"></rect>  
+    </svg> 
+  </div>
+    
+  <div style=" position: relative; right: 90px; ">
+    <svg class="loading" width="90" height="90" transform="rotate(45)">
         <rect class="loading-square" x="30" y="30"  width="30" height="30"></rect>
         <rect class="loading-square" x="0"  y="30"  width="30" height="30"></rect>
         <rect class="loading-square" x="30" y="0"   width="30" height="30"></rect>
         <rect class="loading-square" x="60" y="30"  width="30" height="30"></rect>
-        <rect class="loading-square" x="30" y="60"  width="30" height="30"></rect> 
-    
+        <rect class="loading-square" x="30" y="60"  width="30" height="30"></rect>
     </svg>
+  </div>      
+
+    
 </body>
 </html>

@@ -1,8 +1,8 @@
 $color-background: #222;
-$color-icon: #87e062;
+$color-icon: #1eed25e3;
 
 body {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,6 +10,7 @@ body {
 }
 
 .loading {
+
     .loading-square {
         fill: $color-icon;
         &:not(:first-child) {
@@ -17,15 +18,19 @@ body {
             animation: move 1s infinite;
             animation-delay: 0s;
             &:nth-child(2n+1) {
-                animation-delay: 0.25s;
+                animation-delay: 0.35s;
             }
             @keyframes move {
                 0% { opacity: 0; }
-                25% { opacity: 0.25; }
+                12% { opacity: 0.25; }
+                25% { opacity: 0.5; }
+                37% { opacity: 0.75; }
                 50% { opacity: 1; }
-                75% { opacity: 0.25; }
+                63% {opacity: 0.75; }
+                75% { opacity: 0.5; }
+                88% { opacity: 0.25; }
                 100% { opacity: 0; }
             }
         }
-    }
+    }  
 }
